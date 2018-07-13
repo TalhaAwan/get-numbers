@@ -1,0 +1,24 @@
+{
+  "name": "extract-number",
+  "version": "1.0.0",
+  "description": "Extract numbers from text",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "keywords": [
+    "get",
+    "extract",
+    "find",
+    "number",
+    "numbers",
+    "string",
+    "text"
+  ],
+  "author": "Talha Awan",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "xo": "^0.21.1"
+  }
+}
