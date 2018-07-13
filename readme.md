@@ -20,7 +20,7 @@ str = '50 out of 100'
 extractNumbers(str);
 //=> ['50', '100']
 
-// with commas
+//with commas
 str = '100,000 results found OR 100,000,000 results found'
 extractNumbers(str);
 //=> ['100,000', 100,000,000]
@@ -66,7 +66,7 @@ Type: `Object`
 Type: `boolean`<br>
 Default: `true`
 
-If `false` Remove any commas and convert the whole array to numbers
+If set to `false`, remove any commas and convert the whole array to numbers
 ```js
 let str = 'The numbers are: 3030, 100,000, 100,000,000, 7.7, 90,899,232.89, -22, -15.7, -222,987,899 and -222,987,899.90 ';
 extractNumbers(str); //default
