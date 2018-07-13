@@ -1,7 +1,7 @@
 {
-  "name": "get-numbers",
+  "name": "extract-numbers",
   "version": "1.0.0",
-  "description": "Get numbers from text",
+  "description": "Extract numbers from text",
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"
