@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Extract numbers from text",
   "main": "index.js",
+  "repository": "TalhaAwan/get-numbers",
+  "homepage": "https://github.com/TalhaAwan/get-numbers#readme",
   "scripts": {
     "test": "xo && ava"
   },
