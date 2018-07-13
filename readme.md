@@ -59,6 +59,7 @@ Type: `string`
 
 ### options
 
+Type: `Object`
 
 #### string
 
