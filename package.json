@@ -20,7 +20,7 @@
   "author": "Talha Awan",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^0.21.0",
-    "xo": "^0.21.1"
+    "ava": "^2.4.0",
+    "xo": "^0.25.3"
   }
 }
