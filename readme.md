@@ -36,7 +36,7 @@ extractNumbers(str);
 //=> ['100,000.77', '90,899.89']
 
 //negatives and negative decimals
-str = 'Temperature: -15°C, yesterday: -22°C, day before yesterday: -20.5°;'
+str = 'Temperature: -15°C, yesterday: -22°C, day before yesterday: -20.5°C;'
 extractNumbers(str);
 //=> ['-15', '-22', '-20.5']
 
