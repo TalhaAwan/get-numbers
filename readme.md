@@ -21,9 +21,9 @@ extractNumbers(str);
 //=> ['50', '100']
 
 //with commas
-str = '100,000 results found OR 100,000,000 results found'
+str = '100,000 people shortlisted out of 220,000,000 population'
 extractNumbers(str);
-//=> ['100,000', 100,000,000]
+//=> ['100,000', 220,000,000]
 
 //decimals
 str = 'Your rating is 8.7'
@@ -31,12 +31,12 @@ extractNumbers(str);
 //=> ['8.7']
 
 //decimals with commas
-str = 'Your balance: 100,000.77, previous month: 90,899.89'
+str = 'Your balance: $100,000.77, previous month: $90,899.89'
 extractNumbers(str);
 //=> ['100,000.77', '90,899.89']
 
 //negatives and negative decimals
-str = 'Temperature: -15, yesterday: -22, day before yesterday: -20.5'
+str = 'Temperature: -15&deg;C, yesterday: -22&deg;C, day before yesterday: -20.5&deg;'
 extractNumbers(str);
 //=> ['-15', '-22', '-20.5']
 
@@ -45,36 +45,40 @@ str = '-170,000, -222,987 and -222,987,899.70 respectively.'
 extractNumbers(str); 
 //=> ['-170,000', '-222,987', '-222,987,899.70']
 ```
+___
 
 
 ## API
 
-### extractNumbers(text, [options])
+### extractNumbers(str, options)
 
 Returns an array of numbers.
 
-### text
+__
 
-Type: `string`
-
-### options
+## options
 
 Type: `Object`
 
-#### string
+## string
 
-Type: `boolean`<br>
+Type: `Boolean`
 Default: `true`
 
 If set to `false`, remove any commas and convert the whole array to numbers
 ```js
-let str = 'The numbers are: 3030, 100,000, 100,000,000, 7.7, 90,899,232.89, -22, -15.7, -222,987,899 and -222,987,899.90 ';
-extractNumbers(str); //default
-//=> ['3030', '100,000', '100,000,000', '7.7', '90,899,232.89', '-22', '-15.7', '-222,987,899', '-222,987,899.90']
+let str = `The numbers are: 3030, 100,000, 100,000,000, 7.7, 90,899,232.89, 
+-22, -15.7, -222,987,899 and -222,987,899.90 `;
 
 extractNumbers(str, {string: false})
 //=> [3030, 100000, 100000000, 7.7, 90899232.89, -22, -15.7, -222987899, -222987899.90]
 ```
+
+___
+
+## Related
+
+- [case-study](https://www.npmjs.com/package/case-study) - a library to find, count or verify uppercase and lowercase words in a string.
 
 ## License
 
