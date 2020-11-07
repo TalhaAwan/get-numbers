@@ -1,6 +1,6 @@
 {
   "name": "extract-numbers",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Extract numbers from text",
   "main": "index.js",
   "repository": "TalhaAwan/get-numbers",
