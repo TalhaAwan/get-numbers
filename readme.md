@@ -1,4 +1,8 @@
-# extract-numbers [![Build Status](https://travis-ci.com/TalhaAwan/get-numbers.svg?branch=master)](https://travis-ci.com/TalhaAwan/get-numbers)
+[//]: # "The code structure for the repo: https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c"
+
+# extract-numbers
+
+![extract-numbers](https://github.com/TalhaAwan/get-numbers/actions/workflows/build.yml/badge.svg)
 
 > Get numbers from a string
 
