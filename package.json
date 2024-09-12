@@ -2,11 +2,17 @@
   "name": "extract-numbers",
   "version": "1.0.10",
   "description": "Extract numbers from text",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "repository": "TalhaAwan/get-numbers",
-  "homepage": "https://github.com/TalhaAwan/get-numbers#readme",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "xo && ava"
+    "build": "tsup",
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "keywords": [
     "get",
@@ -20,7 +26,11 @@
   "author": "Talha Awan",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^2.4.0",
-    "xo": "^0.25.4"
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.2"
   }
 }
