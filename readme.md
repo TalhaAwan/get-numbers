@@ -19,37 +19,37 @@ const extractor = new ExtractNumbers();
 
 let str = "3030 results found";
 extractor.extractNumbers(str);
-//=> ['3030']
+//=> ["3030"]
 
 //multiple
 str = "50 out of 100";
 extractor.extractNumbers(str);
-//=> ['50', '100']
+//=> ["50", "100"]
 
 //with commas
 str = "100,000 people shortlisted out of 220,000,000 population";
 extractor.extractNumbers(str);
-//=> ['100,000', 220,000,000]
+//=> ["100,000", 220,000,000]
 
 //decimals
 str = "Your rating is 8.7";
 extractor.extractNumbers(str);
-//=> ['8.7']
+//=> ["8.7"]
 
 //decimals with commas
 str = "Your balance: $100,000.77, previous month: $90,899.89";
 extractor.extractNumbers(str);
-//=> ['100,000.77', '90,899.89']
+//=> ["100,000.77", "90,899.89"]
 
 //negatives and negative decimals
 str = "Temperature: -15°C, yesterday: -22°C, day before yesterday: -20.5°C;";
 extractor.extractNumbers(str);
-//=> ['-15', '-22', '-20.5']
+//=> ["-15", "-22", "-20.5"]
 
 //negatives with commas
 str = "-170,000, -222,987 and -222,987,899.70 respectively.";
 extractor.extractNumbers(str);
-//=> ['-170,000', '-222,987', '-222,987,899.70']
+//=> ["-170,000", "-222,987", "-222,987,899.70"]
 ```
 
 ---
@@ -82,12 +82,12 @@ Default: `false`
 Keep the extracted numbers as strings but remove commas.
 
 ```js
-const extractor = new ExtractNumbers({ string: false });
+const extractor = new ExtractNumbers({ removeCommas: true });
 
 const str = `100,000,000, 90,899,232.89 and -222,987,899.9!`;
 
 extractor.extractNumbers(str);
-//=> ['100000000', '90899232.89', '-222987899.9']
+//=> ["100000000", "90899232.89", "-222987899.9"]
 ```
 
 ---
