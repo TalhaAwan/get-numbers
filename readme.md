@@ -12,6 +12,20 @@ $ npm install extract-numbers
 
 ## Usage
 
+### ES Module
+
+```js
+import ExtractNumbers from "extract-numbers";
+```
+
+### CommonJS
+
+```js
+const ExtractNumbers = require("extract-numbers").default;
+```
+
+## Examples
+
 ```js
 import ExtractNumbers from "extract-numbers";
 
@@ -29,7 +43,7 @@ extractor.extractNumbers(str);
 //with commas
 str = "100,000 people shortlisted out of 220,000,000 population";
 extractor.extractNumbers(str);
-//=> ["100,000", 220,000,000]
+//=> ["100,000", "220,000,000"]
 
 //decimals
 str = "Your rating is 8.7";
