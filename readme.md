@@ -9,8 +9,6 @@
 
 Get numbers from a string.
 
-> Compatible with Node.js 12+ and all modern browsers.
-
 ## Install
 
 ```
@@ -110,6 +108,12 @@ const str = `100,000,000, 90,899,232.89 and -222,987,899.9!`;
 extractor.extractNumbers(str);
 //=> ["100000000", "90899232.89", "-222987899.9"]
 ```
+
+---
+
+## Other Packages
+
+- [randomcoords](https://www.npmjs.com/package/randomcoords) – The Node.js client for the [RandomCoords](https://www.randomcoords.com) API to fetch random geographic coordinates worldwide.
 
 ---
 
