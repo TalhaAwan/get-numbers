@@ -4,7 +4,7 @@ interface Options {
 }
 
 class ExtractNumbers {
-  private options: Options
+  private options: Options;
   constructor(options: Options = {}) {
     this.options = options!;
   }
@@ -20,14 +20,14 @@ class ExtractNumbers {
     numbers = text.match(/(-\d+|\d+)(,\d+)*(\.\d+)*/g) || [];
 
     if (string && removeCommas) {
-      numbers = numbers.map(n => (n as string).replace(/,/g, ''));
+      numbers = numbers.map((n) => (n as string).replace(/,/g, ''));
     }
     if (string === false) {
-      numbers = numbers.map(n => Number((n as string).replace(/,/g, '')));
+      numbers = numbers.map((n) => Number((n as string).replace(/,/g, '')));
     }
 
     return numbers;
   }
-};
+}
 
 export default ExtractNumbers;

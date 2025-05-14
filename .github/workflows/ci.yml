@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+    paths: ['src/**']
+  pull_request:
+    branches: [master]
+    paths: ['src/**']
+
+jobs:
+  test:
+    name: Test on Node.js ${{ matrix.node }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node: [20]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
