@@ -4,8 +4,8 @@
 [![CI](https://github.com/TalhaAwan/get-numbers/actions/workflows/build.yml/badge.svg)](https://github.com/TalhaAwan/get-numbers/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/TalhaAwan/get-numbers/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/npm/dm/extract-numbers)](https://www.npmjs.com/package/extract-numbers)
-[![Node.js >=12](https://img.shields.io/badge/Node.js-%3E%3D12-brightgreen)](https://www.npmjs.com/package/extract-numbers)
-![Supports modern browsers](https://img.shields.io/badge/browser-support-brightgreen)](https://www.npmjs.com/package/extract-numbers)
+[![Node.js >=12](https://img.shields.io/badge/node-%3E%3D12-blue)](https://www.npmjs.com/package/extract-numbers)
+[![Supports modern browsers](https://img.shields.io/badge/browser-support-brightgreen)](https://www.npmjs.com/package/extract-numbers)
 
 Get numbers from a string.
 
