@@ -1,4 +1,4 @@
-[//]: # "The code structure for the repo: https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c"
+[//]: # 'The code structure for the repo: https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c'
 
 # extract-numbers ![extract-numbers](https://github.com/TalhaAwan/get-numbers/actions/workflows/build.yml/badge.svg)
 
@@ -15,53 +15,53 @@ $ npm install extract-numbers
 ### ES Module
 
 ```js
-import ExtractNumbers from "extract-numbers";
+import ExtractNumbers from 'extract-numbers';
 ```
 
 ### CommonJS
 
 ```js
-const ExtractNumbers = require("extract-numbers").default;
+const ExtractNumbers = require('extract-numbers').default;
 ```
 
 ## Examples
 
 ```js
-import ExtractNumbers from "extract-numbers";
+import ExtractNumbers from 'extract-numbers';
 
 const extractor = new ExtractNumbers();
 
-let str = "3030 results found";
+let str = '3030 results found';
 extractor.extractNumbers(str);
 //=> ["3030"]
 
 //multiple
-str = "50 out of 100";
+str = '50 out of 100';
 extractor.extractNumbers(str);
 //=> ["50", "100"]
 
 //with commas
-str = "100,000 people shortlisted out of 220,000,000 population";
+str = '100,000 people shortlisted out of 220,000,000 population';
 extractor.extractNumbers(str);
 //=> ["100,000", "220,000,000"]
 
 //decimals
-str = "Your rating is 8.7";
+str = 'Your rating is 8.7';
 extractor.extractNumbers(str);
 //=> ["8.7"]
 
 //decimals with commas
-str = "Your balance: $100,000.77, previous month: $90,899.89";
+str = 'Your balance: $100,000.77, previous month: $90,899.89';
 extractor.extractNumbers(str);
 //=> ["100,000.77", "90,899.89"]
 
 //negatives and negative decimals
-str = "Temperature: -15°C, yesterday: -22°C, day before yesterday: -20.5°C;";
+str = 'Temperature: -15°C, yesterday: -22°C, day before yesterday: -20.5°C;';
 extractor.extractNumbers(str);
 //=> ["-15", "-22", "-20.5"]
 
 //negatives with commas
-str = "-170,000, -222,987 and -222,987,899.70 respectively.";
+str = '-170,000, -222,987 and -222,987,899.70 respectively.';
 extractor.extractNumbers(str);
 //=> ["-170,000", "-222,987", "-222,987,899.70"]
 ```
